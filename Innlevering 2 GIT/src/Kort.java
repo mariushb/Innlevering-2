@@ -20,4 +20,33 @@ public abstract class Kort {
 		this.aksesskode = aksesskode; 
 		this.sperretKort = false;
 	}
+	public String getFornavn() {
+		return fornavn;
+	}
+
+	public void setFornavn(String fornavn) {
+		this.fornavn = fornavn;
+	}
+
+	public String getEtternavn() {
+		return etternavn;
+	}
+
+	public void setEtternavn(String etternavn) {
+		this.etternavn = etternavn;
+	}
+
+	public GregorianCalendar getDateCreated() {
+		return dateCreated;
+	}
+
+	public boolean isSperret() {
+		return sperretKort;
+	}
+
+	public void setSperretKort(boolean sperretKort) {
+		this.sperretKort = sperretKort;
+	}
+
+	public abstract boolean sjekkPIN(int pin);
 }
